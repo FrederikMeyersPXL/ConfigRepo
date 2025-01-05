@@ -1,0 +1,15 @@
+en
+config t
+line console 0
+password SuperPXL
+login
+exit
+enable secret SuperSecret
+line vty 0 15
+password SuperVTY
+login
+exit
+interface vlan
+ip address 192.168.0.X 255.255.255.0
+no shutdown
+ip default-gateway 192.168.1.x
